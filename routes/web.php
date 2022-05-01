@@ -17,7 +17,7 @@ Route::get('/', \App\Http\Controllers\Main\IndexController::class)->name('main.i
 
 Route::group(['prefix' => 'categories', 'as' => 'category.'], function () {
     Route::get('/', \App\Http\Controllers\Category\IndexController::class)->name('index');
-    Route::get('/create', \App\Http\Controllers\Category\CreateController::class)->name('crate');
+    Route::get('/create', \App\Http\Controllers\Category\CreateController::class)->name('create');
     Route::post('/', \App\Http\Controllers\Category\StoreController::class)->name('store');
     Route::get('/{category}/edit', \App\Http\Controllers\Category\EditController::class)->name('edit');
     Route::get('/{category}', \App\Http\Controllers\Category\ShowController::class)->name('show');
