@@ -152,7 +152,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
+            <a href="{{ route('product.index') }}" class="nav-link">
                 <i class="nav-icon fas fa-laptop"></i>
               <p>
                 Products
@@ -184,7 +184,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
+            <a href="{{ route('user.index') }}" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
               <p>
                 Users
