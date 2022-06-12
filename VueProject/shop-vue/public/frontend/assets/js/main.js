@@ -1,6 +1,6 @@
 jQuery(function ($) {
   'use strict';
-
+  $(document).ready(function() { 
   /****======  Sticky Header ======*******/
   var scrollPosition = window.scrollY;
   if (scrollPosition >= 400) {
@@ -1011,5 +1011,5 @@ jQuery(function ($) {
       $(".loader").css("display", "none");
     });
   });
-
+})
 }(jQuery));
